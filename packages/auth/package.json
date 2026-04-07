@@ -1,0 +1,24 @@
+{
+  "name": "@ai-mock-interview/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@ai-mock-interview/db": "*",
+    "@ai-mock-interview/env": "*",
+    "better-auth": "1.5.5",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@ai-mock-interview/config": "*",
+    "typescript": "^5"
+  }
+}

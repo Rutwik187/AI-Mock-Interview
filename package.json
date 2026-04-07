@@ -1,0 +1,31 @@
+{
+  "name": "ai-mock-interview",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:web": "turbo -F web dev",
+    "db:push": "turbo -F @ai-mock-interview/db db:push",
+    "db:studio": "turbo -F @ai-mock-interview/db db:studio",
+    "db:generate": "turbo -F @ai-mock-interview/db db:generate",
+    "db:migrate": "turbo -F @ai-mock-interview/db db:migrate"
+  },
+  "dependencies": {
+    "@ai-mock-interview/env": "*",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@ai-mock-interview/config": "*",
+    "@types/node": "^22.13.14",
+    "turbo": "^2.8.12",
+    "typescript": "^5"
+  },
+  "packageManager": "npm@11.11.0"
+}

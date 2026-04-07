@@ -1,0 +1,3 @@
+{
+  "extends": "@ai-mock-interview/config/tsconfig.base.json"
+}
