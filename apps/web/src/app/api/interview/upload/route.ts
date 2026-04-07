@@ -12,6 +12,7 @@ import { NextResponse } from "next/server";
 import { PDFParse } from "pdf-parse";
 import { z } from "zod";
 
+export const runtime = "nodejs";
 export const maxDuration = 60;
 
 const questionSchema = z.object({
